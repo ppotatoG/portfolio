@@ -16,14 +16,12 @@ function headerFunction() {
 }
 
 Wrap.addEventListener('click', function(e){
-    console.dir(e)
     const Target=e.target
     if(Target.dataset.hoverviewer=='true') Target.classList.add('on')
-    else if(Target.classList=='hide-btn') {
-        console.log(Target.classList=='hide-btn'.parentNode)
-    }
 })
-
-// document.querySelector('.box .hide-btn').addEventListener('click', function(){
-//     this.parentNode.parentNode.classList.remove('on')
-// })
+let HideBtn=document.querySelectorAll('.box .hide-btn');
+for(let i=0; i<HideBtn.length; i++){
+    HideBtn[i].addEventListener('click', function(){
+        this.parentNode.parentNode.classList.remove('on')
+    })
+}
