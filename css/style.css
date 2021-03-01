@@ -42,18 +42,16 @@
     background-repeat: no-repeat; background-position: center center;
     background-color: silver; background-size: 100px;
     width: 100%; position: relative; overflow: hidden;}
+#portfolio .inner-wrap >div.img-box{background-size: cover;}
 #portfolio .inner-wrap >div::before{content: ""; padding-top: 150%; display: block;}
 
-#portfolio .inner-wrap .lissome{background-image: url(../images/lissom.png); background-size: cover;}
-#portfolio .inner-wrap .WMM{
-    background-color: rgb(43, 128, 86);
-    background-image: url(../images/월드멀티미디어.png);}
-#portfolio .inner-wrap .kakao-talk{
-    background-color: #f9e000; background-image: url(../images/kakaotalk.png);}
-#portfolio .inner-wrap .id-hair{background-image: url(../images/id헤어.png); background-size: cover;}
+#portfolio .inner-wrap .lissome{background-image: url(../images/lissom.png);}
+#portfolio .inner-wrap .WMM{background-color: rgb(43, 128, 86);background-image: url(../images/월드멀티미디어.png);}
+#portfolio .inner-wrap .kakao-talk{background-color: #f9e000; background-image: url(../images/kakaotalk.png);}
+#portfolio .inner-wrap .id-hair{background-image: url(../images/id헤어.png);}
 #portfolio .inner-wrap .id-hospital{background-image: url(../images/id성형외과.gif); background-color: #0f182f;}
 #portfolio .inner-wrap .hanssem{background-image: url(../images/한샘.png); background-color: #fff;}
-#portfolio .inner-wrap .ohora{background-image: url(../images/ohora.jpg); background-size: cover;}
+#portfolio .inner-wrap .ohora{background-image: url(../images/ohora.jpg);}
 #portfolio .inner-wrap .pub-g{background-image: url(../images/PUBG.png); background-color: #252525;}
 
 #portfolio .inner-wrap >div.on .box{visibility: visible; margin: 0;}
