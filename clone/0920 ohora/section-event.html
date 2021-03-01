@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>section-event</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <style>
+        .slidewrap img{width: 100%;}
+    </style>
+</head>
+<body>
+
+    <section class="event">
+        <div class="section_header clearfix">
+            <a href="#">event</a>
+            <a href="#">더보기 +</a>
+        </div>
+
+        <div class="single-item slidewrap">
+            <img src="images/event/50bfc761ec4cec229509ea52987dea74.jpg" alt="">
+            <img src="images/event/521d57530caffaa339ac53e026bf46a9.jpg" alt="">
+            <img src="images/event/8a23cde9fb09f9c417de7b8857043b75.jpg" alt="">
+            <img src="images/event/949ddf8fceff9a3263b95fd031398245.jpg" alt="">
+            <img src="images/event/d0a75b68e8fc15b4dc64537e3f2bc61f.jpg" alt="">
+            <img src="images/event/db6eb03f52c98d15e29d8cefc97388d0.jpg" alt="">
+            <img src="images/event/e342669cd7c20497edb3a73e59fb5c18.jpg" alt="">
+        </div>
+    </section>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="event.js"></script>
+<script src="slick.js"></script>
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script>
+$('.single-item').slick();
+$('.single-item').slick({  
+    infinite: true ,
+    slidesToShow: 1, 
+   slidesToScroll: 1,
+    arrows: true, /* 화살표  */
+    dots:true, /*  아래점  */
+  });
+</script>
+</body>
+</html>

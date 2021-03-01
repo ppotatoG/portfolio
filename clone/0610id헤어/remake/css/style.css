@@ -1,0 +1,12 @@
+@charset "urf-8";
+
+header .menu-bar{position: relative;}
+header .menu-bar i{position: absolute; top:14px; left: 20px; color:#fff;}
+
+
+header h1{
+    width: 100%; height: 46px; background:#302f2f; 
+    display: flex; justify-content: center;}
+header h1 img{height: 46px;}
+
+#wrap{margin: 0 auto;}

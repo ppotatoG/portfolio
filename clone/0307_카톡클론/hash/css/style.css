@@ -1,0 +1,105 @@
+@charset "utf-8";
+@viewport {width : device-width;}
+
+body { -webkit-text-size-adjust : none;} /* 폰트의 사이즈를 늘어나지 않도록 한다 */
+body { -webkit-text-size-adjust : auto } /* 기존과 똑같이 작동하도록 한다 */
+body { -webkit-text-size-adjust : 120% } /* 폰트를 기존 사이즈와 동일하게 한다 */ 
+
+#wrap{max-width: 600px; font-size:14px;}
+
+
+header {
+    height: 38px; width:100%; background: #fff; 
+    position: fixed; z-index: 1; display: flex;}
+header >div{padding:14px 18px 0 18px;}
+header i{font-size: 14px; color:#616161; margin-left: 10px;}
+
+header div{display: flex;} 
+header .header_center{width:calc(100% - 174px); font-size:0;}
+
+header .agency{
+    background-image: url(../images/Uplus_ico.png); width:18px; height: 18px; 
+    display: block; margin:0;} 
+header .battery{margin-top: 1px}
+header .time{margin-top:2px}
+
+/*.content{width:calc(100% - 36px);}*/
+
+.content{background: #f3f3f3; padding-bottom: 59px;}
+
+.content_header{padding-top:50px; border-bottom:2px solid #f0f0f0; background: #fff;}
+.content_header ul{display: flex; position: relative;}
+.content_header ul li i{display: block;}
+.content_header ul li{font-size:1.2em; color:#b3b3b3; margin-left: 18px; font-weight: 600; height: 38px;}
+.content_header ul li i:first-child{ color:#b3b3b3;}
+.content_header ul li i:last-child{margin-top:-9px; color:#b3b3b3;}
+.content_header .header_this{
+    color:#1c1c1c; font-weight: 600; border-bottom:2px solid #222;}
+.content_header .header_this::before{
+    color:#1c1c1c; display: inline; content: "#"; font-weight: 800;}
+.content_header .arrow{position: absolute; top:1px; right: 18px;}
+
+.content .news{margin: 0 auto; font-size: 0.9em;}
+.content .news section{background: #fff; font-size:1.1em; padding: 6px 18px;}
+.content .news section:nth-child(2n){margin:10px 0;}
+
+.news .newsflash{position: relative;}
+.news .newsflash span >*{overflow: hidden; width:calc(100% - 52px); max-height: 20px;}
+.news .newsflash span ul{display: flex; padding-top:5px;}
+.news .newsflash span ul li{color: #cc4862; margin-right: 12px;}
+.news .newsflash span ul li::after{
+    display: inline; content: ">"; color:#bec4c2;}
+.news .newsflash .newsflash_img{
+    background-image: url(../images/newsflash_img.png); width: 52px; height: 52px;
+    display: block; position: absolute; top: 1px; right: 18px;}
+
+.news .news_corona span{
+    background-image: url(../images/news_corona_img.png); width: 315px; height: 53px;
+    display: block; margin: 0 auto;}
+
+.news .newsbox {padding-bottom: 16px;}
+.news .newsbox .text span{
+    display: block; width:calc(100% - 18px);height: 42px; overflow: hidden;
+    box-sizing: border-box; line-height: 3em; border-bottom: 1px solid #f4f4f4;}
+.news .newsbox .text span:last-child{border-bottom:none;}
+.news .newsbox .img{display: flex;}
+.news .newsbox .img span:first-child{margin-right: 4%;}
+.news .newsbox .img span{width:48%;}
+.news .newsbox .img span img{width:100%;}
+
+.content .news .ad_1{padding:0;}
+.news .ad_1 img{width: 100%;}
+
+.news .newsbot p::before{
+    display: inline-block; content:"뉴스봇"; background:#336abd; 
+    border-radius: 2px; font-size:0.8em; color:#fff; padding:2px; margin-right: 5px;}
+
+.fixed_footer {border-top: solid 1px #f4f4f4; position: fixed; bottom: -1px; left: 0; width: 100%;}
+.fixed_footer div{display: flex;}
+.fixed_footer div a {width:25%; height: 59px; background: #f9f9f9;} 
+.fixed_footer div a i { 
+    margin:17px auto 0; text-align: center; 
+    display: block; font-size: 20px; color:#3e3e3e;} 
+.fixed_footer .hash i{font-size: 28px; margin-top:9px; font-weight: 600;}
+.fixed_footer .viewmore {position: relative;} 
+.fixed_footer .viewmore i{width: 4px; height: 4px; border-radius: 50%; border: 2px solid #3e3e3e; margin:22px 0 0 42px;} 
+.fixed_footer .viewmore i::after{
+    width: 4.5px; height: 4px; border-radius: 50%; border: 2px solid #3e3e3e;
+    display: block; content: ""; margin:-8px 0 0 10px;} 
+.fixed_footer .viewmore i::before{
+    width: 4.5px; height: 4px; border-radius: 50%; border: 2px solid #3e3e3e;
+    display: block; content: ""; margin:-2px 0 0 -15px;} 
+
+.fixed_footer div::before{display: block; width:2px; content: ""; height: 59px; background: #f4f4f4}
+
+/**/
+
+#pull {background: #fce000; height: 1080px; text-align: center; padding: 400px 0; display: none;}
+#pull span {font-size: 30px; color:#111; font-weight: 600;}
+
+
+@media all and (min-width:600px){
+    #wrap{display: none;}
+    #pull {display: block;}
+} 
+

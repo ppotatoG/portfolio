@@ -1,5 +1,4 @@
 @charset "urf-8";
-#wrap{min-width: 400px;}
 #header{
     display: flex; justify-content: space-between; align-items: flex-end; background-color: #fff;
     text-transform: capitalize; padding: 1rem 2rem; box-sizing: border-box;}
@@ -24,20 +23,22 @@
 #main h2{font-size: 5rem; font-weight: 500;}
 #main p{font-size: 1.8rem; font-weight: 400; padding-top: 2rem;}
 
+.inner-wrap{margin: 0 auto;}
+
 /* #about{display: none;} */
 #about{padding: 5rem;}
-#about .inner-wrap{display: flex; justify-content: space-around; align-items: flex-start;}
-#about figure{max-width: 50%;}
+#about .inner-wrap{display: flex; justify-content: center; align-items: flex-start;}
+#about figure{max-width: 300px;}
 #about figure img{width: 100%; margin: 0 auto;}
 #about .info{margin-left: 4%;}
 #about .sns-wrap a{display: inline-block;}
 #about .sns-wrap a i{color: rgb(179, 64, 83); width: 2rem;}
-#about .about-me{margin-top: 5rem;}
+#about .about-me{margin: 5rem auto 0;}
 
 #portfolio .inner-wrap{
     padding: 5rem; justify-content: center;
     grid-template-columns: 50% 50%;
-    display: grid; gap: .5rem; margin: 0 auto;}
+    display: grid; gap: .5rem;}
 #portfolio .inner-wrap >div{
     background-repeat: no-repeat; background-position: center center;
     background-color: silver; background-size: 100px;
@@ -78,11 +79,15 @@
 }
 
 @media all and (min-width: 480px) and (max-width: 767px){
+    #about .inner-wrap{max-width: 600px;}
+    #about .about-me{max-width: 600px;}
     #portfolio .inner-wrap{
         max-width: 600px; grid-template-columns: 30% 30% 30%;}
 }
 
 @media all and (min-width: 767px) and (max-width: 1024px){
+    #about .inner-wrap{max-width: 700px;}
+    #about .about-me{max-width: 700px;}
     #portfolio .inner-wrap{
         max-width: 700px;
         grid-template-columns: 25% 25% 25% 25%;}
@@ -92,6 +97,8 @@
 }
 
 @media all and (min-width: 1024px){
+    #about .inner-wrap{max-width: 900px;}
+    #about .about-me{max-width: 900px;}
     #portfolio .inner-wrap{
         max-width: 900px;
         grid-template-columns: 20% 20% 20% 20% 20%;}

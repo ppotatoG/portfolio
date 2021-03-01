@@ -1,0 +1,103 @@
+@charset "utf-8";
+@viewport {width : device-width;}
+
+body { -webkit-text-size-adjust : none;} /* 폰트의 사이즈를 늘어나지 않도록 한다 */
+body { -webkit-text-size-adjust : auto } /* 기존과 똑같이 작동하도록 한다 */
+body { -webkit-text-size-adjust : 120% } /* 폰트를 기존 사이즈와 동일하게 한다 */ 
+
+#wrap{max-width: 600px; font-size:14px;}
+
+
+header {
+    height: 38px; width:100%; background: #fff; 
+    position: fixed; z-index: 1; display: flex;}
+header >div{padding:14px 18px 0 18px;}
+header i{font-size: 14px; color:#616161; margin-left: 10px;}
+
+header div{display: flex;} 
+header .header_center{width:calc(100% - 174px); font-size:0;}
+
+header .agency{
+    background-image: url(../images/Uplus_ico.png); width:18px; height: 18px; 
+    display: block; margin:0;} 
+header .battery{margin-top: 1px}
+header .time{margin-top:2px}
+
+.content .header{width: 100%; display: flex; padding-top: 24px;}
+.content .header ul li{float: left; margin: 27px 18px 0 0; width:26px; height: 26px;}
+.content .header ul li:last-child{margin: 27px 0 0 0;}
+.content .header ul li a{width: 100%;}
+.content .header ul i{font-size: 18px; color:#2c2c2c;}
+.content .header h1{
+    font-size: 1.3em; font-weight: 600; padding-top: 22px; width:calc(100% - 158px);}
+ 
+.content {width:calc(100% - 36px); margin:0 auto;}
+
+.content .my_profile { width:100%; margin-top: 10px; padding-bottom: 14px;
+    display: flex; border-bottom: solid 1px #eee;}
+
+.content .my_profile div{
+    background-image: url(../images/i_profile.png); 
+    width: 62px; height: 62px; font-size:0;}
+.content .my_profile p{font-size:1em; padding-left: 1rem; line-height: 3.5rem;}
+
+
+.content .recom{ 
+    width:100%; box-sizing: border-box; margin-top: 12px;
+    border-bottom: solid 1px #eee; position: relative;}
+.content .recom h4{font-size: 0.9em; color: #8a8a8a; padding-bottom: 12px;}
+.content .recom img{width:14px; height: 14px; position: absolute; top:0; right: 0;}
+.content .recom_ {display: flex; position: relative; margin-bottom: 12px;}
+.content .recom_ div{
+    background-image: url(../images/recom_profile.png); width: 44px; height: 45px; font-size:0;}
+.content .recom_ p{font-size: 1em; padding-left: 12px; line-height: 2.5rem;}
+.content .recom_ span{font-size:0.8em; color:#959595; position: absolute; top:8px; right: 25px;}
+.content .recom_ img{width:14px; height: 14px; position: absolute; top:9px; right: 0;}
+
+.content .friend {width:100%; margin-top: 1rem;}
+.content .friend_header{display: flex; height: 22px; font-size: 0.9em; position: relative;}
+.content .friend_header h4{ color: #8a8a8a;}
+.content .friend_header p{padding-left: 3px; color: #8a8a8a;}
+.content .friend_header img{width:12px; height: 12px; position: absolute; top:0; right: 0;}
+
+.content .friend_list >div{display: flex; position: relative; margin: 8px 0;}
+.content .friend_list div img{width:44px; height: 44px; padding-right: 14px;}
+.content .friend_list div h5{font-size: 1em; color:#101010; line-height: 2em;}
+.content .friend_list div p{font-size:0.8em; color:#9a9a9a;}
+
+.content .friend_list .melon{
+    position: absolute; top: 8px; right: 0; height: 28px; box-sizing: border-box;
+    border: solid 2px #34a85d; border-radius: 20px; padding: 0 8px 0 10px; background: #fff;}
+.content .friend_list .melon img{width: 12px; height: 12px; padding: 0;}
+.content .friend_list .melon span{font-size: 0.8em;}
+
+.fixed_footer {border-top: solid 1px #f4f4f4; position: fixed; bottom: 0; left: 0; width: 100%;}
+.fixed_footer div{display: flex;}
+.fixed_footer div a {width:25%; height: 58px; background: #f9f9f9;} 
+.fixed_footer div a i { 
+    margin:17px auto 0; text-align: center; 
+    display: block; font-size: 20px; color:#3e3e3e;} 
+ .fixed_footer .hash i{font-size: 28px; margin-top:9px;}
+.fixed_footer .viewmore {position: relative;} 
+.fixed_footer .viewmore i{width: 4px; height: 4px; border-radius: 50%; border: 2px solid #3e3e3e; margin:22px 0 0 42px;} 
+.fixed_footer .viewmore i::after{
+    width: 4.5px; height: 4px; border-radius: 50%; border: 2px solid #3e3e3e;
+    display: block; content: ""; margin:-8px 0 0 10px;} 
+.fixed_footer .viewmore i::before{
+    width: 4.5px; height: 4px; border-radius: 50%; border: 2px solid #3e3e3e;
+    display: block; content: ""; margin:-2px 0 0 -15px;} 
+
+.fixed_footer div::before{display: block; width:2px; content: ""; height: 10px; background: rgba(0, 0, 0, 0);}
+
+
+/**/
+
+
+#pull {background: #fce000; height: 1080px; text-align: center; padding: 400px 0; display: none;}
+#pull span {font-size: 30px; color:#111; font-weight: 600;}
+
+@media all and (min-width:600px){
+    #wrap{display: none;}
+    #pull {display: block;}
+} 
+

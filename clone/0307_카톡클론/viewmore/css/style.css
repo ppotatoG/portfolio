@@ -1,0 +1,110 @@
+@charset "utf-8";
+@viewport {width : device-width;}
+
+body { -webkit-text-size-adjust : none;} /* 폰트의 사이즈를 늘어나지 않도록 한다 */
+body { -webkit-text-size-adjust : auto } /* 기존과 똑같이 작동하도록 한다 */
+body { -webkit-text-size-adjust : 120% } /* 폰트를 기존 사이즈와 동일하게 한다 */ 
+
+#wrap{max-width: 600px; font-size:14px;}
+
+
+header {
+    height: 38px; width:100%; background: #fff; 
+    position: fixed; z-index: 1; display: flex;}
+header >div{padding:14px 18px 0 18px;}
+header i{font-size: 14px; color:#616161; margin-left: 10px;}
+
+header div{display: flex;} 
+header .header_center{width:calc(100% - 174px); font-size:0;}
+
+header .agency{
+    background-image: url(../images/Uplus_ico.png); width:18px; height: 18px; 
+    display: block; margin:0;} 
+header .battery{margin-top: 1px}
+header .time{margin-top:2px}
+
+.content .header{width: 100%; display: flex; padding-top: 24px;}
+.content .header ul li{float: left; margin: 27px 18px 0 0; width:26px; height: 26px;}
+.content .header ul li:last-child{margin: 27px 0 0 0;}
+.content .header ul li a{width: 100%;}
+.content .header ul i{font-size: 18px; color:#2c2c2c;}
+.content .header h1{
+    font-size: 1.3em; font-weight: 600; padding-top: 22px; width:calc(100% - 158px);}
+
+.content {width:calc(100% - 36px); margin:0 auto; padding-bottom: 59px;} 
+
+.my_info .base {display: flex; padding:14px 0;}
+.my_info .base .proile_img{background-image: url(../images/i_profile.png); width: 62px; height: 62px;}
+.my_info .base .text{padding-left: 13px; width:calc(100% - 178px);}
+.my_info .base .text p:first-child{font-size:15px; padding-top:14px;}
+.my_info .base .text p:last-child{font-size:10px; color:#b4b4b4;}
+.my_info .base .my_btn{
+    width:60px; height: 36px; box-sizing: border-box; margin-top: 11px;
+    border: solid 1px #dbdbdb; border-radius: 25px;
+    text-align: center; line-height: 34px; font-size: 12px;}
+.my_info .base .kakaocon{
+    width:41px; height: 35px; box-sizing: border-box; margin:11px 0 0 5px;
+    border: solid 1px #dbdbdb; border-radius: 25px;}
+.my_info .base .kakaocon i {
+    width: 18px; height: 14px; background-image: url(../images/kakaocon_ico.png); 
+    display: block; margin:10px 0 0 13px;}
+
+.my_info .kakaopay{background: #f0f0f0; width:100%; height: 55px; display: flex; border-radius: 7px; position: relative;}
+.my_info .kakaopay div{margin-top: 11px; color: #171717; font-weight: 600;}
+.my_info .kakaopay .value{
+    background:#fcfcfc; width: 102px; height: 35px; border-radius: 25px;
+    position: relative; margin-left: 12px;}
+.my_info .kakaopay .value::before{
+    background-image: url(../images/kakaopay_ico.png); width:43px; height: 14px;
+    display: inline-block; content: ""; position: absolute; top: 11px; left: 14px;}
+.my_info .kakaopay .value p{font-size: 16px; position: absolute; top: 6px; right: 14px;}
+.my_info .kakaopay div:nth-child(2){position: absolute; top:7px; right: 80px;}
+.my_info .kakaopay div:nth-child(3){position: absolute; top:7px; right: 27px;}
+
+.my_info .box {margin-top: 10px; border-bottom: solid 2px #f8f8f8;}
+.my_info .box >div {display: flex; text-align: center;}
+.my_info .box div div {width:25%; height: 80px;}
+.my_info .box div div img {margin-top:14px}
+.my_info .box div div p{font-size:11px;}
+
+.my_info .make{display: flex; height: 55px; border-bottom: solid 2px #f8f8f8; box-sizing: border-box;}
+.my_info .make div{margin-top:18px; display: flex; font-size:13px; width:50%; padding-left: 18px; box-sizing: border-box;}
+.my_info .make div p:nth-child(2){padding-left: 2px; font-weight: 600;}
+.my_info .make div p:nth-child(3){padding-left: 10px; color:#899490;}
+.my_info .make div img{width: 18px; height: 18px;}
+
+.my_info .ad{margin: 17px auto 0; display: block;}
+.my_info .ad img{width: 100%; display: block;}
+
+
+.fixed_footer {border-top: solid 1px #f4f4f4; position: fixed; bottom: 0; left: 0; width: 100%;}
+.fixed_footer div{display: flex;}
+.fixed_footer div a {width:25%; height: 58px; background: #f9f9f9;} 
+.fixed_footer div a i { 
+    margin:17px auto 0; text-align: center; 
+    display: block; font-size: 20px; color:#3e3e3e;} 
+.fixed_footer .hash i{font-size: 28px; margin-top:9px;}
+.fixed_footer .viewmore {position: relative;} 
+.fixed_footer .viewmore i{
+    width: 4px; height: 4px; border-radius: 50%; background: #3e3e3e;
+    border: 2px solid #3e3e3e; margin:22px 0 0 42px;} 
+.fixed_footer .viewmore i::after{
+    width: 4.5px; height: 4px; border-radius: 50%; border: 2px solid #3e3e3e;
+    display: block; content: ""; margin:-8px 0 0 10px; background: #3e3e3e;} 
+.fixed_footer .viewmore i::before{
+    width: 4.5px; height: 4px; border-radius: 50%; border: 2px solid #3e3e3e;
+    display: block; content: ""; margin:-2px 0 0 -15px; background: #3e3e3e;} 
+
+.fixed_footer div::before{display: block; width:2px; content: ""; height: 10px; background: rgba(0, 0, 0, 0);}
+
+/**/
+
+#pull {background: #fce000; height: 1080px; text-align: center; padding: 400px 0; display: none;}
+#pull span {font-size: 30px; color:#111; font-weight: 600;}
+
+
+@media all and (min-width:600px){
+    #wrap{display: none;}
+    #pull {display: block;}
+} 
+
