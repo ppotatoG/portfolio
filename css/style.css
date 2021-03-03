@@ -1,7 +1,7 @@
 @charset "urf-8";
 #header{
     display: flex; justify-content: space-between; align-items: flex-end; background-color: #fff;
-    text-transform: capitalize; padding: 1rem 2rem; box-sizing: border-box;}
+    text-transform: capitalize; padding: 1rem 2rem; box-sizing: border-box; z-index: 1;}
 #header h1 a{text-transform: uppercase; font-size: 2.4rem; font-weight: 700; color: #E53A40;}
 #header ul{display: flex;}
 #header ul li:nth-child(2){margin: 0 1rem;}
@@ -11,11 +11,11 @@
 #header ul li a::after{
     display: block; content:""; position: absolute; top: 0; left: 0; opacity: .8;
     width: 0%; height: 100%; background: #E53A40; transition: width .2s; z-index: -1;}
+
 #header ul li:hover a{color: #fff;}
 #header ul li:hover a::after{width: 100%;}
 
 #header.fix{position: fixed; top: 0; left: 0; width: 100%; z-index: 1;}
-
 
 #main{
     display: flex; width: 100%; height: 100vh; flex-direction: column;
@@ -26,10 +26,9 @@
     border-right:2px solid #000;
     overflow:hidden;
     white-space:nowrap;
-    animation: typing 5s steps(14) forwards, 
+    animation: typing 3s steps(14) forwards, 
                 blink-caret .8s step-end infinite;
 }
-
 @keyframes blink-caret{
     from, to{border-color:transparent;}
     50%{border-color:#000}
@@ -40,12 +39,15 @@
 
 .inner-wrap{margin: 0 auto;}
 
-#about{padding: 5rem; min-height: 100vh; display: flex; flex-direction: column; justify-content: center;}
+#about{
+    padding: 5rem; min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: center;}
 #about figure{max-width: 300px;}
 #about figure img{width: 100%; margin: 0 auto;}
 #about .info{margin-top: 10rem;}
 #about .sns-wrap a{display: inline-block;}
 #about .sns-wrap a i{color: rgb(179, 64, 83); width: 2rem;}
+#about .info{margin-top: 10rem;}
 #about .about-me{margin: 10rem auto 0;}
 #about video{width: 100%; max-width: 900px; margin: 5rem auto 0; display: block;}
 
@@ -60,7 +62,8 @@
     width: 100%; position: relative; overflow: hidden;}
 #portfolio .inner-wrap >div::before{content: ""; padding-top: 150%; display: block;}
 #portfolio .inner-wrap >div:hover{background-size: 120px;}
-#portfolio .inner-wrap >div.img-box{background-size: cover;}
+#portfolio .inner-wrap >div.img-box{background-size: cover; background-position: center top; transition: background-position .2s;}
+#portfolio .inner-wrap >div.img-box:hover{background-position: center bottom;}
 
 #portfolio .inner-wrap .lissome{background-image: url(../images/lissom.png);}
 #portfolio .inner-wrap .WMM{background-color: rgb(43, 128, 86);background-image: url(../images/월드멀티미디어.png);}
@@ -70,6 +73,8 @@
 #portfolio .inner-wrap .hanssem{background-image: url(../images/한샘.png); background-color: #fff;}
 #portfolio .inner-wrap .ohora{background-image: url(../images/ohora.jpg);}
 #portfolio .inner-wrap .pub-g{background-image: url(../images/PUBG.png); background-color: #252525;}
+#portfolio .inner-wrap .brity{background-image: url(../images/brity.PNG); }
+#portfolio .inner-wrap .brity:hover{background-position: bottom;}
 #portfolio .inner-wrap .dunbar{background-image: url(../images/DB-bg.jpg);}
 #portfolio .inner-wrap .dunbar::after{
     position: absolute; top: 0; left: 0;
@@ -107,9 +112,10 @@
 #portfolio .inner-wrap .box .hide-btn span:last-child{transform: rotate(-45deg);}
 
 #footer{background-color: #e53a4036; padding: 5rem 0; text-align: center;}
-#footer p{font-size: 3rem; font-weight: 700;}
+#footer p{font-size: 3rem; font-weight: 700; text-transform: uppercase;}
 #footer ul{display: flex; justify-content: center; margin-top: 2rem;}
 #footer ul li:last-child{margin-left: 4rem;}
+#footer ul li a{text-decoration: underline;}
 
 @media all and (min-width: 480px) and (max-width: 767px){
     #about .inner-wrap{max-width: 600px;}
@@ -118,10 +124,12 @@
         max-width: 600px; grid-template-columns: 30% 30% 30%;}
 }
 
-@media all and (min-width: 767px) and (max-width: 1024px){
-    #about .info{margin-left: 4%;}
+@media all and (min-width: 767px){
+    #about .info{margin-left: 4%; margin-top: 0;}
     #about .inner-wrap{display: flex; justify-content: center; align-items: flex-start;}
+}
 
+@media all and (min-width: 767px) and (max-width: 1024px){
     #about .inner-wrap{max-width: 700px;}
     #about .about-me{max-width: 700px;}
     #portfolio .inner-wrap{
