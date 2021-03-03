@@ -39,7 +39,7 @@ table {
 	border-spacing: 0;
 }
 
-button, input{outline: none; border: none;}
+button, input, video{outline: none; border: none;}
 
 .clearfix{
     zoom:1;}

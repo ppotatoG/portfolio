@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 </head>
 <body>
-    <div id="ddd"></div>
     <div id="wrap">
         <header id="header">
-            <h1>ppotato-G</h1>
+            <h1><a href="#main">ppotato-G</a></h1>
             <ul>
                 <li><a href="#about">about</a></li>
                 <li><a href="#portfolio">portfolio</a></li>
@@ -24,13 +26,13 @@
         <div class="content">
             <section id="main">
                 <h2>안녕하세요!</h2>
-                <p><span>끊임없이 노력하는 유소현입니다</span></p>
+                <p><span>끊임없이 공부하는 유소현입니다</span></p>
             </section>
 
             <section id="about">
                 <div class="inner-wrap">
-                    <figure><img src="images/유소현.jpg" alt="유소현-증명사진"></figure>
-                    <ul class="info">
+                    <figure data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000"><img src="images/유소현.jpg" alt="유소현-증명사진"></figure>
+                    <ul class="info" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
                         <li>유소현</li>
                         <li>1999 .04</li>
                         <li>경기도 고양시 일산서구</li>
@@ -45,7 +47,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="about-me">
+                <div class="about-me" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
                     <p>10년 전 네이버 광고를 하며 마케터의 꿈을 키웠던 저는 지금 개발자의 꿈을 꾸고 있습니다.<br>
                         아버지의 작은 매장부터 여러 지인의 광고 진행을 하며 “내 성장에는 한계가 있을 것 같다” 라는 생각이 들었습니다.<br>
                         저는 항상 더 다양한 것을 배우고 싶어 했기 때문에 마케팅 쪽은 제 길이 아니다 라는 결론이 지어졌습니다.<br>
@@ -55,10 +57,11 @@
                         앞으로도 저는 끊임없이 노력할 것입니다.
                         </p>
                 </div>
+                
             </section>
 
             <section id="portfolio">
-                <div class="inner-wrap">
+                <div class="inner-wrap" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
                     <div class="lissome img-box" data-hoverViewer="true">
                         <div class="box">
                             <h3>lissome</h3>
@@ -169,7 +172,7 @@
                             <button type="submit" class="hide-btn"><span></span><span></span></button>
                         </div>
                     </div>
-                    <div class="dunbar" data-hoverViewer="true">
+                    <div class="dunbar img-box" data-hoverViewer="true">
                         <div class="box">
                             <h3>dunbar</h3>
                             <span class="date">2021</span>
@@ -181,7 +184,7 @@
                             <button type="submit" class="hide-btn"><span></span><span></span></button>
                         </div>
                     </div>
-                    <div class="sopia img-box" data-hoverViewer="true">
+                    <div class="sopia" data-hoverViewer="true">
                         <div class="box">
                             <h3>sopia</h3>
                             <span class="date">2021</span>
@@ -193,23 +196,21 @@
                             <button type="submit" class="hide-btn"><span></span><span></span></button>
                         </div>
                     </div>
-                    <div class="toss" data-hoverViewer="true">
-                        <div class="box">
-                            <h3>toss</h3>
-                            <span class="date">2021</span>
-                            <ul class="hashtag">
-                                <li>clone codding</li>
-                                <li>Responsive</li>
-                            </ul>
-                            <a href="#" target="_blank">link</a>
-                            <button type="submit" class="hide-btn"><span></span><span></span></button>
-                        </div>
+                    
                     </div>
                 </div>
             </section>
         </div>
-    </div>
 
+        <footer id="footer">
+            <p>ppotato-G</p>
+            <ul>
+                <li><a href="https://blog.naver.com/thgus2270">네이버 블로그</a></li>
+                <li><a href="https://github.com/ppotatoG">git hub</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script>AOS.init(); </script>
     <script src="event.js"></script>
 </body>
 </html>

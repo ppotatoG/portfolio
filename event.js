@@ -1,5 +1,4 @@
-let once={once: true},
-    Wrap=document.querySelector('#wrap');
+let Wrap=document.querySelector('#wrap');
 
 window.onscroll = function() {headerFunction()};
 
