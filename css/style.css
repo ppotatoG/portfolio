@@ -62,7 +62,7 @@
     width: 100%; position: relative; overflow: hidden;}
 #portfolio .inner-wrap >div::before{content: ""; padding-top: 150%; display: block;}
 #portfolio .inner-wrap >div:hover{background-size: 120px;}
-#portfolio .inner-wrap >div.img-box{background-size: cover; background-position: center top; transition: background-position .2s;}
+#portfolio .inner-wrap >div.img-box{background-size: 200%; background-position: center top; transition: background-position .2s;}
 #portfolio .inner-wrap >div.img-box:hover{background-position: center bottom;}
 
 #portfolio .inner-wrap .lissome{background-image: url(../images/lissom.png);}
@@ -73,9 +73,11 @@
 #portfolio .inner-wrap .hanssem{background-image: url(../images/한샘.png); background-color: #fff;}
 #portfolio .inner-wrap .ohora{background-image: url(../images/ohora.jpg);}
 #portfolio .inner-wrap .pub-g{background-image: url(../images/PUBG.png); background-color: #252525;}
-#portfolio .inner-wrap .brity{background-image: url(../images/brity.PNG); }
+#portfolio .inner-wrap .brity{background-image: url(../images/brity.PNG); background-size: cover}
+#wrap #portfolio .inner-wrap .brity{background-size: cover}
 #portfolio .inner-wrap .brity:hover{background-position: bottom;}
 #portfolio .inner-wrap .dunbar{background-image: url(../images/DB-bg.jpg);}
+#wrap #portfolio .inner-wrap .dunbar{background-size: cover}
 #portfolio .inner-wrap .dunbar::after{
     position: absolute; top: 0; left: 0;
     display: flex; justify-content: center; align-items: center; 
