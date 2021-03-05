@@ -1,9 +1,9 @@
 @charset "urf-8";
 #header{
     display: flex; justify-content: space-between; align-items: flex-end; background-color: #fff;
-    text-transform: capitalize; padding: 1rem 2rem; box-sizing: border-box; z-index: 1;}
+    text-transform: capitalize; padding: 1rem 2rem; box-sizing: border-box; z-index: 1; position: relative;}
 #header h1 a{text-transform: uppercase; font-size: 2.4rem; font-weight: 700; color: #E53A40;}
-#header ul{display: flex;}
+#header ul{display: flex; position: absolute; top: 1rem; right: 2rem;}
 #header ul li:nth-child(2){margin: 0 1rem;}
 #header ul li a{
     padding: .5rem 1rem; position: relative; overflow: hidden; 
