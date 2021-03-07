@@ -150,5 +150,6 @@
         grid-template-columns: 20% 20% 20% 20% 20%;}
     #portfolio .inner-wrap .box h3{font-size: 2rem;}
     #portfolio .inner-wrap .box *{font-size: 1.8rem;}
-    #portfolio .inner-wrap .box .hashtag li{height: 3rem; line-height: 3rem;}
+    #portfolio .inner-wrap .box li:first-child{margin-top: 0;}
+    #portfolio .inner-wrap .box li{margin-top: .5rem;}
 }
