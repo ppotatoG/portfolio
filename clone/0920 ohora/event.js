@@ -21,26 +21,4 @@ $(".gnb").click(function(){
   }
 })
 
-/*
-var hiddenBtn=document.querySelector(".gnb");
-var gnb_box=document.querySelector(".gnb_box");
-var hidden=document.querySelector(".hidden");
-
-hiddenBtn.addEventListener('click',function(){
-
-  if(this.classList.contains.querySelector(".hidden")){
-    console.log(hiddenBtn)
-  }else{
-    console.log(hiddenBtn)
-  }
-
-  if(this.hasClass)
-  this.classList.remove("hidden");
-
-  if(this.classList.contains(hidden)){
-    console.log(true)
-  }else{
-    console.log(false)
-  }
-})
 */
