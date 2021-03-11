@@ -70,7 +70,6 @@ next.addEventListener('click',function(){
     }
 })
 
-//section_ad 랜덤이미지
 var sectionimgArray= new Array();
     sectionimgArray[0]="images/section_ad/리모델링맛집.jpg";
     sectionimgArray[1]="images/section_ad/우리집사용법.jpg";
@@ -84,7 +83,6 @@ window.addEventListener('DOMContentLoaded', function(){
     objImg.src=sectionimgArray[imgNum];
 })
 
-//main_ad 랜덤이미지
 var mainimgArray= new Array();
     mainimgArray[0]="images/main_ad.jpg";
     mainimgArray[1]="images/main_ad-1.jpg";
@@ -98,19 +96,8 @@ window.addEventListener('DOMContentLoaded', function(){
     objImg.src=mainimgArray[imgNum];
 })
 
-//footer link
 var footerI=document.querySelectorAll(".footer .community >div h3 i");
-/*
-footerI[0].addEventListener('click', function(){
-    location.href="https://www.hanssem.com/main/main.do#end";
-})
-footerI[2].addEventListener('click', function(){
-    location.href="https://www.hanssem.com/main/main.do#end";
-})
-footerI[3].addEventListener('click', function(){
-    location.href="https://www.hanssem.com/main/main.do#end";
-})
-*/
+
 for(i=0; i<3; i++){
     footerI[i].addEventListener('click', function(){
         location.href="#";

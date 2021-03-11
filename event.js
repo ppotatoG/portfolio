@@ -24,5 +24,3 @@ for(let i=0; i<HideBtn.length; i++){
         this.parentNode.parentNode.classList.remove('on')
     })
 }
-
-//git error
