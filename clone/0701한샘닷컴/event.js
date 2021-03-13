@@ -40,8 +40,6 @@ var slide=document.querySelector(".slides"),
     
 slide.style.width=(slideWidth*slidesLength)+'px';
 
-console.log(current);
-
 prev.addEventListener('click',function(){
     if(current=slidesLength-1){
     current--;
@@ -50,7 +48,6 @@ prev.addEventListener('click',function(){
     prev.classList.add('btn_opacity');
     slide.style.left=0+'px';
     
-    console.log(current);
     }else{
         false;
     }
@@ -64,7 +61,6 @@ next.addEventListener('click',function(){
     next.classList.add('btn_opacity');
     slide.style.left=-(slideWidth)+'px';
     
-    console.log(current);
     }else{
         false;
     }
