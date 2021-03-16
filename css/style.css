@@ -82,7 +82,7 @@
     position: absolute; top: 0; left: 0;
     display: flex; justify-content: center; align-items: center; 
     content:""; width: 100%; height: 100%; transition: .2s;
-    background: url(../images/logo-type-logo-white.svg) no-repeat;
+    background: url(../images/logo-dunbar.svg) no-repeat;
     background-size: 100px; background-position: center center;}
 #portfolio .inner-wrap .dunbar:hover::after{background-size: 120px;}
 #portfolio .inner-wrap .sopia{
@@ -95,6 +95,7 @@
     color: #fff; font-size: 2.4rem; font-weight: 600;}
 #portfolio .inner-wrap .sopia:hover{background-size: 100%;}
 #portfolio .inner-wrap .sopia:hover:after{font-size: 3rem;}
+#portfolio .inner-wrap .toss{background-image: url(../images/logo-toss.svg); background-color: #fff;}
 
 #portfolio .inner-wrap >div.on .box{visibility: visible; margin: 0;}
 #portfolio .inner-wrap .box{
