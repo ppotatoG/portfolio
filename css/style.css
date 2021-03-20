@@ -117,7 +117,8 @@
 #footer{background-color: #e53a4036; padding: 5rem 0; text-align: center;}
 #footer p{font-size: 3rem; font-weight: 700; text-transform: uppercase;}
 #footer ul{display: flex; justify-content: center; margin-top: 2rem;}
-#footer ul li:last-child{margin-left: 4rem;}
+#footer ul li{margin-left: 4rem;}
+#footer ul li:first-child{margin-left: 0rem;}
 #footer ul li a{text-decoration: underline;}
 
 @media all and (min-width: 480px) and (max-width: 767px){
