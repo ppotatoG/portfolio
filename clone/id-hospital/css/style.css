@@ -673,8 +673,5 @@ nav .map_con >a:last-child{width: 198px; margin: 0 auto;}
 
 #quickmenu.on{width: 100%;}
 nav .quick_bar.on{right: 540px;}
-/*
-nav .quick_bar.on .quick_img_link a::before{background-position-x: -316px;}
-*/
 
 #quickmenu .quick_con .on{right: 0;}

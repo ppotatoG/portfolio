@@ -386,5 +386,5 @@ footer .infobox div{font-size: 17px; color:#6e6e6e; margin-top:12px;}
 #quick_menu li i{display: block; margin: -3px auto; font-size: 9px;}
 
 #quick_menu.quick_menu_fixed{
-    position: fixed; top: 51px; right: 0;
+    position: fixed; top: 51px; right: 0; z-index: 1;
 }

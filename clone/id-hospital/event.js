@@ -2,7 +2,6 @@ var clickTimes=0,
     language=document.querySelector('.language'),
     familySiteBtn=document.querySelector('.family_site_btn');
 
-//header language button
 language.addEventListener('click', function(){
 
     var languageForm=document.querySelector('.language_form');
@@ -20,7 +19,6 @@ language.addEventListener('click', function(){
 });
 
 
-//footer FamilySiteF button
 familySiteBtn.addEventListener('click', function(){
 
     var FamilySiteForm=document.querySelector('.family_site_form'),
@@ -39,10 +37,6 @@ familySiteBtn.addEventListener('click', function(){
 
 });
 
-
-
-
-//quiclmenu
 var quickBtn = document.querySelectorAll('.quick_img_link li'),
     quickBg = document.querySelector('#quickmenu'),
     quickBar = document.querySelector('.quick_bar'),
@@ -51,8 +45,6 @@ var quickBtn = document.querySelectorAll('.quick_img_link li'),
 for(var i=0; i<=4; i++){
     quickBtn[i].addEventListener('click', function(){      
         var dataId = this.getAttribute('data-id');
-    
-        console.log( dataId );
 
         document.querySelector("#"+ dataId).classList.add("on");
         quickBar.classList.add('on');

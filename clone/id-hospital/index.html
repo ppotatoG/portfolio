@@ -654,7 +654,7 @@
                 <video muted autoplay loop>
                     <source src="bg_beforeAfter.mp4">
                 </video>
-                <div class="tlqkfzzzz">
+                <div>
                     <div class="bnacon">
                         <h2>
                             <img src="images/bna/txt_beforeAfter.png" alt="id before&after">
@@ -986,7 +986,6 @@
             </section>
 
         </div>    
-
         <footer class="footer">
             <div class="info">
                 <div class="infowrap">
@@ -1028,7 +1027,6 @@
                 </div>                
             </div>
         </footer>
-
         <nav id="quickmenu">
             <div class="quick_bar">
                 <ul class="member">
@@ -1341,9 +1339,8 @@
         </nav>
 
     </div>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../jquery-3.6.0.min.js"></script>
     <script src="event.js"></script>
-    <script src="slick.js"></script>
     <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
       $(document).on('ready', function() {
@@ -1398,7 +1395,7 @@
           variableWidth: true
         });
         $(".lazy").slick({
-          lazyLoad: 'ondemand', // ondemand progressive anticipated
+          lazyLoad: 'ondemand',
           infinite: true
         });
       });

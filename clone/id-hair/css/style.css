@@ -51,7 +51,9 @@ header .menu .lnb li::after{
     position: absolute; top: 0; right: 0;}
 header .menu .lnb li:nth-last-child(1)::after{display: none;}
 
-header .menu .gnb >li:hover .lnb{height: 77px; visibility: inherit;}
+header .menu .gnb >li:hover .lnb{
+    background-color: #fff; margin-top: 2px; border-top: 2px solid #d1d1d1;
+    height: 77px; visibility: inherit;}
 header .menu .gnb >li:hover .lnb *{opacity: 1; visibility: inherit;}
 
 header .menu .gnb .lnb a{transition: 0s;}
@@ -111,42 +113,3 @@ footer >a{
     position: absolute; top: -25px; right: 260px; 
     width: 25px; height: 25px; background: #302f2f;}
 footer a i{font-size: 14px; color: #fff; margin-left: 8px;}
-
-
-
-/*
-#quick {position: fixed; top: 220px; right: 0;}
-
-#quick div{
-    width: 68px; height: 68px; background: #ececec;
-    display: flex; justify-content: center; align-items: center;}
-#quick div i{font-size: 22px; color: #8f8f8f;}
-
-#quick div:hover{width: 136px; background: #302f2f;}
-#quick div:hover p{display: block;}
-#quick div:hover i{color: #fff;}
-
-#quick div:nth-child(1){
-    font-size: 11px; background: #d2232a; color:#fff; letter-spacing: 1px;
-    padding: 8px 11px; box-sizing: border-box; line-height:12px; width: 68px;}
-#quick div:nth-child(2){margin: 1px 0;}
-#quick .hide{display: none; color:#fff; margin-left: 20px;}
-*/
-
-/*
-2
-
-header .gnb li{ position: relative;}
-header .menu .gnb .lnb{
-    width: 100vh; border-bottom: solid 1px #d1d1d1; position: absolute; top:0px; left: 0;}
-
-
-1
-header .menu .gnb li div{
-    width: 100%; margin: 0 auto; box-sizing: border-box; border-bottom: solid 1px #d1d1d1; }
-
-header .gnb .lnb{
-    width: 980px;display: block;
-    position: absolute; top: 105px; left: 0; box-sizing: border-box; }
-header .gnb .lnb li{font-size: 18px; font-weight: normal; padding: 0;}
-*/
