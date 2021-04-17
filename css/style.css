@@ -45,7 +45,7 @@
 #about figure{max-width: 300px;}
 #about figure img{width: 100%; margin: 0 auto;}
 #about .info{margin-top: 10rem;}
-#about .sns-wrap a{display: inline-block;}
+#about .sns-wrap a{display: inline-block; color: transparent;}
 #about .sns-wrap a i{color: rgb(179, 64, 83); width: 2rem;}
 #about .info{margin-top: 10rem;}
 #about .about-me{margin: 10rem auto 0;}
